@@ -1,0 +1,13 @@
+{
+    "presets": ["@babel/preset-env", "@babel/react"],
+    "compact": true,
+    "plugins": [
+      [
+        "transform-strict-mode",
+        {
+          "strict": true
+        }
+      ]
+    ]
+  }
+  
