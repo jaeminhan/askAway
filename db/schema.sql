@@ -16,11 +16,11 @@ CREATE TABLE topics (
     content text NOT NULL,
     user_id INT,
     created_on TIMESTAMP NOT NULL DEFAULT NOW()
-)
+);
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(50) NOT NULL,
     created_on TIMESTAMP DEFAULT current_timestamp
-)
+);
