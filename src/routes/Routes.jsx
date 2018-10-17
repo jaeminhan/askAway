@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { MuiThemeProvider, CssBaseline } from '@material-ui/core';
 import theme from '../assets/theme';
 
@@ -8,7 +8,7 @@ import LandingContainer from '../containers/LandingContainer';
 const Routes = () => (
   <MuiThemeProvider theme={theme}>
     <CssBaseline>
-      <Router history={history}>
+      <Router>
         <Route path="/" exact component={LandingContainer} />
       </Router>
     </CssBaseline>
