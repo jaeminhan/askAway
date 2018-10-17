@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import TopicsPage from '../components/TopicsPage/TopicsPage';
+import CommentsPage from '../components/CommentsPage/CommentsPage';
 
 class LandingContainer extends React.Component {
   constructor() {
