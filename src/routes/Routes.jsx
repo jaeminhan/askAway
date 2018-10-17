@@ -5,6 +5,12 @@ import theme from '../assets/theme';
 
 import LandingContainer from '../containers/LandingContainer';
 
+// const theme = createMuiTheme({
+//   typography: {
+//     useNextVariants: true,
+//   },
+// });
+
 const Routes = () => (
   <MuiThemeProvider theme={theme}>
     <CssBaseline>

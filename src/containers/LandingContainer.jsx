@@ -24,7 +24,7 @@ class LandingContainer extends React.Component {
     .catch(err => console.log('getAllTopics', err));
   }
 
-  changeComponent() {
+  changeComponent(x) {
     this.setState({
       currentPage: x,
     });

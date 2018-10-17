@@ -8,3 +8,5 @@ const globalStyles = {
     'black': '#000000',                       // rgb(0, 0, 0)
   },
 }
+
+export default globalStyles;

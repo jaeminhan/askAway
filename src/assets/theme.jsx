@@ -4,13 +4,13 @@ import globalStyles from './globalStyles';
 export default createMuiTheme({
   palette: {
     text: {
-      primary: '#000000',
+      primary: globalStyles.color.black,
     },
     background: {
-      default: '#FFFFFF',
+      default: globalStyles.color.white,
     },
-    typography: {
-      useNextVariants: true,
-    },
+  },
+  typography: {
+    useNextVariants: true,
   },
 });
