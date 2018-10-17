@@ -1,10 +1,9 @@
 // import globalStyles from '../../assets/globalStyles';
-// import { Theme } from '@material-ui/core/styles';
 
-// const styles = (theme: Theme) => ({
+// const styles = {
 //   root: {
-//     fontFamily: globalStyles.fontFamily.roboto,
-//   }
-// });
+//     flexGrow: 1,
+//   },
+// };
 
 // export default styles;
