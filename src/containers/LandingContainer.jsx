@@ -1,5 +1,6 @@
 import * as React from 'react';
 import CommentsPage from '../components/CommentsPage/CommentsPage';
+import TopicsPage from '../components/TopicsPage/TopicsPage';
 
 class LandingContainer extends React.Component {
   constructor() {
@@ -14,7 +15,7 @@ class LandingContainer extends React.Component {
 
   componentDidMount() {
     fetch('/api/topics')
-    .then(r = r.json())
+    .then((res) => res.json())
     .then((topics) => {
       this.setState({
         topics: topics,
