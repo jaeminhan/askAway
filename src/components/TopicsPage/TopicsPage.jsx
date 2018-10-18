@@ -17,7 +17,7 @@ const TopicsPage = props => {
     });
     
     return (
-      <div id="topics-container">
+      <div>
         {topics}
       </div>
     );

@@ -6,12 +6,19 @@ import globalStyles from '../../assets/globalStyles';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 
 const styles = {
+  root: {
+    top: 0,
+    width: '100%',
+    position: 'fixed',
+  },
+  appHeader: {
+    backgroundColor:'#2196f3',
+  },
   logo: {
     fontFamily: globalStyles.fontFamily.roboto,
-    color: 'tomato',
+    color: globalStyles.color.white,
     fontSize: 24,
   },
 };
@@ -19,10 +26,10 @@ const styles = {
 const Header = (props) => {
   const { classes } = props;
   return (
-    <div>
-      <AppBar position="static" color="default">
+    <div className={classes.root}>
+      <AppBar className={classes.appHeader}>
         <Toolbar>
-            <h3 className={classes.logo}>askAway</h3>
+            <h3 className={classes.logo}>askAway Header</h3>
         </Toolbar>
       </AppBar>
     </div>

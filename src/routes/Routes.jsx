@@ -11,11 +11,11 @@ const Routes = () => (
   <MuiThemeProvider theme={theme}>
     <CssBaseline>
       <Router>
-        <div>
+        <React.Fragment>
           <Header />
           <Route path="/" exact component={LandingContainer} />
           <Footer />
-        </div>
+        </React.Fragment>
       </Router>
     </CssBaseline>
   </MuiThemeProvider>

@@ -1,8 +1,23 @@
 import * as React from 'react';
+import { withStyles } from '@material-ui/core';
+import globalStyles from '../assets/globalStyles';
+
 import CommentsPage from '../components/CommentsPage/CommentsPage';
 import TopicsPage from '../components/TopicsPage/TopicsPage';
 
+
+const styles = {
+  root: {
+    fontFamily: globalStyles.fontFamily.roboto,
+    color: 'black',
+    fontSize: 16,
+    width: '100%',
+    margin: '100px 0',
+  },
+};
+
 class LandingContainer extends React.Component {
+  
   constructor() {
     super();
 
@@ -39,12 +54,14 @@ class LandingContainer extends React.Component {
   }
   
   render() {
+    const { classes } = this.props;
     return (
-      <React.Fragment>
+      <div className={classes.root}>
         {this.renderComponent(this.state.currentPage)}
-      </React.Fragment>
+      </div>
     )
   }
 }
 
-export default LandingContainer;
+export default withStyles(styles)(LandingContainer);
+// export default LandingContainer;
