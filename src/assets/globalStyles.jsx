@@ -9,8 +9,7 @@ const globalStyles = {
   },
   
   'fontFamily': {
-    'roboto': 'Roboto',
-    'robotoSlab': 'Roboto Slab'
+    'default': 'Arial, Helvetica, sans-serif',
   },
 }
 

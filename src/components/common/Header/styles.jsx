@@ -1,17 +1,16 @@
-import globalStyles from '../../assets/globalStyles';
+import globalStyles from '../../../assets/globalStyles';
 
 const styles = () => ({
   root: {
-    bottom: 0,
+    top: 0,
     width: '100%',
     position: 'fixed',
   },
-  appFooter: {
+  appHeader: {
     backgroundColor:'#2196f3',
   },
   logo: {
-    fontFamily: globalStyles.fontFamily.roboto,
-    color: globalStyles.color.white,
+    fontFamily: globalStyles.fontFamily.default,
     fontSize: 24,
   },
 });

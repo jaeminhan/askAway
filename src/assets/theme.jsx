@@ -13,5 +13,8 @@ export default createMuiTheme({
   typography: {
     useNextVariants: true,
     fontSize: 12,
+    fontFamily:
+      '-apple-system,system-ui,BlinkMacSystemFont,' +
+      '"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif',
   },
 });

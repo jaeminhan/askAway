@@ -4,8 +4,8 @@ import { MuiThemeProvider, CssBaseline } from '@material-ui/core';
 import theme from '../assets/theme';
 
 import LandingContainer from '../containers/LandingContainer';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../components/common/Header/Header';
+import Footer from '../components/common/Footer/Footer';
 
 const Routes = () => (
   <MuiThemeProvider theme={theme}>

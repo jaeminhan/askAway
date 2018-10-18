@@ -17,9 +17,9 @@ const TopicsPage = props => {
     });
     
     return (
-      <div>
+      <React.Fragment>
         {topics}
-      </div>
+      </React.Fragment>
     );
 }
 

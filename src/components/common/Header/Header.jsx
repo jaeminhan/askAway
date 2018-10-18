@@ -12,7 +12,7 @@ const Header = (props) => {
     <div className={classes.root}>
       <AppBar className={classes.appHeader}>
         <Toolbar>
-            <h3 className={classes.logo}>askAway Header</h3>
+            <h3 className={classes.logo}>askAway</h3>
         </Toolbar>
       </AppBar>
     </div>
