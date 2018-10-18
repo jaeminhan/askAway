@@ -1,27 +1,10 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core';
-import globalStyles from '../../assets/globalStyles';
-// import styles from './styles';
+import styles from './styles';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-
-const styles = {
-  root: {
-    bottom: 0,
-    width: '100%',
-    position: 'fixed',
-  },
-  appFooter: {
-    backgroundColor:'#2196f3',
-  },
-  logo: {
-    fontFamily: globalStyles.fontFamily.roboto,
-    color: globalStyles.color.white,
-    fontSize: 24,
-  },
-};
 
 const Footer = (props) => {
   const { classes } = props;
@@ -41,4 +24,3 @@ Footer.propTypes = {
 };
 
 export default withStyles(styles)(Footer);
-// export default Header;

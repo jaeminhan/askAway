@@ -84,7 +84,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".jsx", ".json", ".js"]
+    extensions: [".jsx", ".json", ".js", ".tsx"]
   },
 };
 
