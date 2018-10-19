@@ -1,9 +1,12 @@
 const express = require('express');
-const comments = express.Router();
+const commentsRoute = express.Router();
 const { getAllComments } = require('../../models/comments');
 const sendJSONresp = (req, res) => res.json(res.comments || []);
 
-comments.route('/')
-  .get(getAllComments, sendJSONresp)
+// commentsRoute.route('/')
+//   .post(addComment, sendJSONresp);
 
-module.exports = comments;
+commentsRoute.route('/:id')
+  .get(getAllComments, sendJSONresp);
+
+module.exports = commentsRoute;
