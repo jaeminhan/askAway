@@ -1,11 +1,11 @@
 import React from 'react';
-import TopicCard from './TopicsCard';
+import TopicTemplate from './TopicTemplate';
 
-const TopicsPage = props => {
+const TopicsCard = props => {
 
   const topics = props.topics.map((topic) => {
     return (
-      <TopicCard
+      <TopicTemplate
         key={topic.id.toString()}
         title={topic.title}
         changeComponent={props.changeComponent}
@@ -23,4 +23,4 @@ const TopicsPage = props => {
     );
 }
 
-export default TopicsPage;
+export default TopicsCard;

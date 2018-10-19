@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core';
 import globalStyles from '../assets/globalStyles';
 
 import CommentsPage from '../components/CommentsPage/CommentsPage';
-import TopicsPage from '../components/TopicsPage/TopicsPage';
+import TopicsCard from '../components/TopicsCard/TopicsCard';
 
 
 const styles = {
@@ -51,7 +51,7 @@ class LandingContainer extends React.Component {
 
   renderComponent(component) {
     if (component === 0) {
-      return <TopicsPage topics={this.state.topics} changeComponent={this.changeComponent.bind(this)} />
+      return <TopicsCard topics={this.state.topics} changeComponent={this.changeComponent.bind(this)} />
     } else {
       return <CommentsPage changeComponent={this.changeComponent.bind(this)} />
     }
@@ -68,4 +68,3 @@ class LandingContainer extends React.Component {
 }
 
 export default withStyles(styles)(LandingContainer);
-// export default LandingContainer;
