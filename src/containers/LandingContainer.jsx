@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core';
 import globalStyles from '../assets/globalStyles';
 
 import CommentsPage from '../components/CommentsPage/CommentsPage';
-import TopicsCard from '../components/TopicsCard/TopicsCard';
+import TopicsCard from '../components/TopicsPage/TopicsCard';
 
 
 const styles = {

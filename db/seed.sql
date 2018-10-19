@@ -3,7 +3,12 @@ INSERT INTO comments (id, body, topic_id, user_id) VALUES
   (2, 'I need Points!', 2, 2),
   (3, 'Book Direct for points. ', 3, 3),
   (4, 'Arlo Nomad is awesome', 4, 4),
-  (5, 'Amazing Hotel', 5, 5);
+  (5, 'Amazing Hotel', 5, 5),
+  (6, 'I&#39m going to visit there soon!', 1, 2),
+  (7, 'Using all the points to checkout Vietnam.', 2, 3),
+  (8, 'Did you see the new ad? It&#39s pretty amazing.', 3, 4),
+  (9, 'I visited this hotel and what a great service...', 4, 5),
+  (10, 'It used to be the Trump Hotel... Just saying.', 5, 1);
 
 INSERT INTO topics (id, title, content, user_id) VALUES
   (1, 'Learn about Four Seasons Hotel', 'Four Seasons Hotels Limited, trading as Four Seasons Hotels and Resorts, is an international luxury hospitality company headquartered in Toronto, Ontario.', 1),
