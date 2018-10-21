@@ -22,10 +22,11 @@ INSERT INTO comments (id, body, topic_id, user_id) VALUES
   (7, 'Using all the points to checkout Vietnam.', 2, 3),
   (8, 'Did you see the new ad? It is pretty amazing.', 3, 4),
   (9, 'I visited this hotel and what a great service...', 4, 5),
-  (10, 'It used to be the Trump Hotel... Just saying.', 5, 1);
+  (10, 'It used to be the Trump Hotel... Just saying.', 5, 1),
+  (11, 'Testing.', 1, 5);
 
 
 ALTER SEQUENCE users_id_seq RESTART WITH 6;
 ALTER SEQUENCE topics_id_seq RESTART WITH 6;
-ALTER SEQUENCE comments_id_seq RESTART WITH 11;
+ALTER SEQUENCE comments_id_seq RESTART WITH 12;
 

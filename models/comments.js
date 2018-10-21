@@ -3,9 +3,9 @@ const db = require('../lib/dbConnect.js');
 function getAllComments(req, res, next) {
   db.any(`SELECT *
           FROM topics
-          INNER JOIN comments
+          LEFT JOIN comments
           ON topics.id = comments.topic_id
-          WHERE topics.id = ANY('{1, 2, 3, 4, 5}');
+          WHERE topics.id = comments.topic_id;
           `, [req.params.id])
   .then((comments) => {
     res.comments = comments;
@@ -25,3 +25,6 @@ module.exports = {
   getAllComments,
   // addComment
 };
+
+
+// WHERE topics.id = $1;

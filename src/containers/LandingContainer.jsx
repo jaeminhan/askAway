@@ -6,7 +6,6 @@ import globalStyles from '../assets/globalStyles';
 import CommentsPage from '../components/CommentsPage/CommentsPage';
 import TopicsCard from '../components/TopicsPage/TopicsCard';
 
-
 const styles = {
   root: {
     fontFamily: globalStyles.fontFamily.roboto,
@@ -52,6 +51,7 @@ class LandingContainer extends React.Component {
     })
     .then((res) => res.json())
     .then((comments) => {
+      console.log(comments);
       this.setState({
         comments: comments,
       });
