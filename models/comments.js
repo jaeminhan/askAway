@@ -14,16 +14,8 @@ function getAllComments(req, res, next) {
   .catch(err => next(err));
 }
 
-// function addComment(req, res, next) {
-//   db.none(`INSERT INTO comments (body)
-//            VALUES ($1);`, [req.body.body])
-//   .then(next())
-//   .catch(err => next(err));
-// }
-
 module.exports = {
   getAllComments,
-  // addComment
 };
 
 
