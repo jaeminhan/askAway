@@ -18,7 +18,7 @@ const CommentsPage = props => {
 
   return (
     <div>
-      <button onClick={() => props.changeComponent(0)}>Click to return!</button>
+      <button onClick={() => props.changeComponent(0, 0)}>Click to return!</button>
       {comments}
     </div>   
   )

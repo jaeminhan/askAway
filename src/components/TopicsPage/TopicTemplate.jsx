@@ -16,6 +16,7 @@ function TopicCard(props) {
   return (
     <Card className={classes.card}>
       <CardContent>
+        <h2>{props.topic_id}</h2>
         <h2>{props.title}</h2>
         <p>Description: {props.content}</p>
         <p>Date started: {props.date_created}</p>

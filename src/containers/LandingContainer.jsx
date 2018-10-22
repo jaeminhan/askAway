@@ -26,6 +26,7 @@ class LandingContainer extends React.Component {
 
     this.state = {
       currentPage: 0,
+      currentTopic: 0,
       topics: [],
       comments: [],
     }
@@ -45,9 +46,9 @@ class LandingContainer extends React.Component {
   getComments(id) {
     fetch(`/api/comments/${id}`, {
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      method: 'GET'
+      method: 'GET',
     })
     .then((res) => res.json())
     .then((comments) => {
@@ -56,20 +57,21 @@ class LandingContainer extends React.Component {
         comments: comments,
       });
     })
-    .catch(err => console.log('getComments', err));
+    .catch(err => console.log('getAllComments', err));
   }
 
   changeComponent(x, y) {
     this.getComments(y);
     this.setState({
       currentPage: x,
+      currentTopic: y,
     });
   }
 
   renderComponent(component) {
     if (component === 0) {
       return <TopicsCard topics={this.state.topics} changeComponent={(x, y) => this.changeComponent(x, y)} />;
-    } else {
+    } else if (component === 1) {
       return <CommentsPage comments={this.state.comments} changeComponent={(x, y) => this.changeComponent(x, y)} />;
     }
   }
