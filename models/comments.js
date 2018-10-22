@@ -5,7 +5,7 @@ function getAllComments(req, res, next) {
           FROM topics
           LEFT JOIN comments
           ON topics.id = comments.topic_id
-          WHERE topics.id = $1;
+          WHERE topics.id = ANY('{4}');
           `, [req.params.id])
   .then((comments) => {
     res.comments = comments;
@@ -44,4 +44,10 @@ module.exports = {
 };
 
 
-// WHERE topics.id = $1;
+// WHERE topics.id = ANY('{1, 2, 3, 4, 5}');
+// WHERE topics.id IN ($1);
+// WHERE topics.id = comments.topic_id;
+// WHERE topics.id = ANY($1);
+// WHERE topics.id = 1;
+// WHERE topics.id = ANY('{4}'); Only nomad info...
+// Need to target first param*

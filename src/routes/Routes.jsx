@@ -13,7 +13,7 @@ const Routes = () => (
       <Router>
         <React.Fragment>
           <Header />
-          <Route path="/" exact component={LandingContainer} />
+          <Route path="/" component={LandingContainer} />
           <Footer />
         </React.Fragment>
       </Router>
