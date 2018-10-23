@@ -44,6 +44,8 @@ module.exports = {
 };
 
 
+// WHERE topics.id = ANY(comments.topic_id);
+// WHERE topics.id = ANY('{$1}');
 // WHERE topics.id = ANY('{1, 2, 3, 4, 5}');
 // WHERE topics.id IN ($1);
 // WHERE topics.id = comments.topic_id;
