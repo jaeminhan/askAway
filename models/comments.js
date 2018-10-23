@@ -5,7 +5,7 @@ function getAllComments(req, res, next) {
           FROM topics
           LEFT JOIN comments
           ON topics.id = comments.topic_id
-          WHERE topics.id = ANY('{4}');
+          WHERE topics.id = $1;
           `, [req.params.id])
   .then((comments) => {
     res.comments = comments;
@@ -52,4 +52,5 @@ module.exports = {
 // WHERE topics.id = ANY($1);
 // WHERE topics.id = 1;
 // WHERE topics.id = ANY('{4}'); Only nomad info...
+// WHERE topics.id = ANY; - syntax error
 // Need to target first param*

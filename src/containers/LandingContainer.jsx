@@ -44,6 +44,7 @@ class LandingContainer extends React.Component {
   }
 
   getComments(id) {
+    console.log('getcomments id: ', id);
     fetch(`/api/comments/${id}`, {
       headers: {
         'Content-Type': 'application/json',
@@ -57,11 +58,12 @@ class LandingContainer extends React.Component {
         comments: comments,
       });
     })
-    .catch(err => console.log('getAllComments', err));
+    .catch(err => console.log('getComments', err));
   }
 
   changeComponent(x, y) {
     this.getComments(y);
+  
     this.setState({
       currentPage: x,
       currentTopic: y,
